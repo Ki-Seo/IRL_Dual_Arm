@@ -1,0 +1,1270 @@
+Script started on 2017년 06월 10일 (토) 오후 05시 50분 16초
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ rosrun beginner_tutorials talker.py 
+[31m[ERROR] [WallTime: 1497084625.226316] Unable to immediately register with master node [http://localhost:11311]: master may not be running yet. Will keep trying.
+[0m^CTraceback (most recent call last):
+  File "/home/kimkiseo/catkin_ws/src/beginner_tutorials/scripts/talker.py", line 54, in <module>
+    talker()
+  File "/home/kimkiseo/catkin_ws/src/beginner_tutorials/scripts/talker.py", line 44, in talker
+    rospy.init_node('talker', anonymous=True)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/client.py", line 320, in init_node
+    raise rospy.exceptions.ROSInitException("init_node interrupted before it could complete")
+rospy.exceptions.ROSInitException: init_node interrupted before it could complete
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ cd scripts/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ chmod +x add_two_ints_client.py
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ cd
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ cleat[Kr
+[H[2J]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ cd[K[Kroscore
+... logging to /home/kimkiseo/.ros/log/ef950d0a-4db9-11e7-a420-b8975a05b31c/roslaunch-kimkiseo-TZ75B-9732.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://kimkiseo-TZ75B:41209/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [9744][0m
+[1mROS_MASTER_URI=http://kimkiseo-TZ75B:11311/[0m
+]2;roscore http://kimkiseo-TZ75B:11311/
+[1msetting /run_id to ef950d0a-4db9-11e7-a420-b8975a05b31c[0m
+[1mprocess[rosout-1]: started with pid [9757][0m
+started core service [/rosout]
+^R
+^C[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ cm
+Base path: /home/kimkiseo/catkin_ws
+Source space: /home/kimkiseo/catkin_ws/src
+Build space: /home/kimkiseo/catkin_ws/build
+Devel space: /home/kimkiseo/catkin_ws/devel
+Install space: /home/kimkiseo/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"make cmake_check_build_system"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+[34m####[0m
+[34m#### Running command: [1m"make -j4 -l4"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+[  0%] [  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin
+Built target _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+[  0%] [  0%] [  0%] Built target _dynamixel_controllers_generate_messages_check_deps_TorqueEnable
+Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
+Built target _dynamixel_controllers_generate_messages_check_deps_SetSpeed
+[  0%] [  0%] Built target _dynamixel_controllers_generate_messages_check_deps_RestartController
+[  0%] Built target _dynamixel_msgs_generate_messages_check_deps_MotorState
+Built target _dynamixel_controllers_generate_messages_check_deps_StartController
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_StopController
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _dynamixel_msgs_generate_messages_check_deps_MotorStateList
+[  0%] [  0%] Built target _dynamixel_msgs_generate_messages_check_deps_JointState
+Built target _oroca_ros_tutorials_generate_messages_check_deps_srvTutorial
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target _oroca_ros_tutorials_generate_messages_check_deps_msgTutorial
+[  0%] [  0%] Built target sensor_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_cpp
+[  1%] Built target turtlebot_arm_moveit_ikfast_kinematics_plugin
+[  1%] Built target geometry_msgs_generate_messages_cpp
+[  2%] Built target calibrate_kinect_checkerboard
+[  2%] [  2%] [  2%] Built target _find_object_2d_generate_messages_check_deps_ObjectsStamped
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionResult
+Built target actionlib_msgs_generate_messages_cpp
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionFeedback
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionResult
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionGoal
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionGoal
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationResult
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionAction
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationGoal
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationAction
+Built target geometry_msgs_generate_messages_lisp
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceAction
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceGoal
+[  2%] [  2%] [  2%] Built target geometry_msgs_generate_messages_py
+Built target actionlib_msgs_generate_messages_lisp
+Built target actionlib_msgs_generate_messages_py
+[  7%] [ 11%] Built target dynamixel_controllers_generate_messages_py
+Built target dynamixel_controllers_generate_messages_cpp
+[ 16%] Built target dynamixel_controllers_generate_messages_lisp
+[ 18%] [ 20%] Built target dynamixel_msgs_generate_messages_cpp
+[ 22%] Built target dynamixel_msgs_generate_messages_lisp
+Built target dynamixel_msgs_generate_messages_py
+[ 24%] Built target oroca_ros_tutorials_generate_messages_lisp
+[ 26%] Built target oroca_ros_tutorials_generate_messages_py
+[ 27%] [ 27%] Built target oroca_ros_tutorials_generate_messages_cpp
+Built target find_object_2d_generate_messages_cpp
+[ 28%] [ 29%] Built target find_object_2d_generate_messages_py
+Built target find_object_2d_generate_messages_lisp
+[ 40%] Built target turtlebot_arm_block_manipulation_generate_messages_cpp
+[ 40%] Built target dynamixel_controllers_generate_messages
+[ 51%] Built target turtlebot_arm_block_manipulation_generate_messages_lisp
+[ 63%] Built target turtlebot_arm_block_manipulation_generate_messages_py
+[ 63%] [ 63%] Built target dynamixel_msgs_generate_messages
+Built target oroca_ros_tutorials_generate_messages
+[ 63%] Built target ros_tutorial_msg_publisher
+[ 64%] Built target ros_tutorial_msg_subscriber
+[ 65%] Built target ros_tutorial_srv_server
+[ 65%] [ 65%] Built target ros_tutorial_srv_client
+Built target find_object_2d_generate_messages
+[ 66%] Built target print_objects_detected
+[ 66%] [ 66%] Built target turtlebot_arm_block_manipulation_gencpp
+[ 66%] Built target tf_example
+Built target turtlebot_arm_block_manipulation_generate_messages
+[ 67%] Built target block_manipulation_demo
+[ 67%] Built target interactive_manipulation_action_server
+[ 67%] Built target block_detection_action_server
+[ 98%] Built target find_object
+[ 98%] Built target pick_and_place_action_server
+[100%] Built target find_object_2d
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_wskimkiseo@kimkiseo-TZ75B:~/catkin_ws$ cd
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ roscore
+... logging to /home/kimkiseo/.ros/log/97299db0-4dba-11e7-b7d2-b8975a05b31c/roslaunch-kimkiseo-TZ75B-10716.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://kimkiseo-TZ75B:42626/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [10728][0m
+[1mROS_MASTER_URI=http://kimkiseo-TZ75B:11311/[0m
+]2;roscore http://kimkiseo-TZ75B:11311/
+[1msetting /run_id to 97299db0-4dba-11e7-b7d2-b8975a05b31c[0m
+[1mprocess[rosout-1]: started with pid [10741][0m
+started core service [/rosout]
+^C[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ ^C
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ roscd beginner_tutorials/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ mkdir srv
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ roscp rospy_tutorials AddTwoInts.srv srv/AddTw oInts.srv
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ rossrv show beginner_tutorials/AddTwoInts
+int64 a
+int64 b
+---
+int64 sum
+
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ rossrv show AddTwoInts
+[beginner_tutorials/AddTwoInts]:
+int64 a
+int64 b
+---
+int64 sum
+
+[rospy_tutorials/AddTwoInts]:
+int64 a
+int64 b
+---
+int64 sum
+
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ cd
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ clear
+[H[2J]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ rosrun [K[K[K[Kcore
+... logging to /home/kimkiseo/.ros/log/b7bff68e-4dbd-11e7-92a0-b8975a05b31c/roslaunch-kimkiseo-TZ75B-11351.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://kimkiseo-TZ75B:46272/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [11363][0m
+[1mROS_MASTER_URI=http://kimkiseo-TZ75B:11311/[0m
+]2;roscore http://kimkiseo-TZ75B:11311/
+[1msetting /run_id to b7bff68e-4dbd-11e7-92a0-b8975a05b31c[0m
+[1mprocess[rosout-1]: started with pid [11376][0m
+started core service [/rosout]
+^C[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ clear
+[H[2J]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ roscd br[Kt[Keginner_tutorials/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ mkdia[Kr msg
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ echo "int64 num" > msg [K/Num.msg
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ cd
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ rosmsg show [message type]
+Usage: rosmsg show [options] <message type>
+
+rosmsg: error: you may only specify one message type
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ rosmsg show beginner_tutorials/Num
+int64 num
+
+]0;kimkiseo@kimkiseo-TZ75B: ~kimkiseo@kimkiseo-TZ75B:~$ roscd beginner_tutorials/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ cd ../..
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_wskimkiseo@kimkiseo-TZ75B:~/catkin_ws$ catkin_makeint[Ks[K[K[K install
+Base path: /home/kimkiseo/catkin_ws
+Source space: /home/kimkiseo/catkin_ws/src
+Build space: /home/kimkiseo/catkin_ws/build
+Devel space: /home/kimkiseo/catkin_ws/devel
+Install space: /home/kimkiseo/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"make cmake_check_build_system"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+-- Using CATKIN_DEVEL_PREFIX: /home/kimkiseo/catkin_ws/devel
+[0m-- Using CMAKE_PREFIX_PATH: /home/kimkiseo/catkin_ws/devel;/home/kimkiseo/alligators_ws/devel;/opt/ros/indigo
+[0m-- This workspace overlays: /home/kimkiseo/catkin_ws/devel;/home/kimkiseo/alligators_ws/devel;/opt/ros/indigo
+[0m-- Using PYTHON_EXECUTABLE: /usr/bin/python
+[0m-- Using Debian Python package layout
+[0m-- Using empy: /usr/bin/empy
+[0m-- Using CATKIN_ENABLE_TESTING: ON
+[0m-- Call enable_testing()
+[0m-- Using CATKIN_TEST_RESULTS_DIR: /home/kimkiseo/catkin_ws/build/test_results
+[0m-- Found gtest sources under '/usr/src/gtest': gtests will be built
+[0m-- Using Python nosetests: /usr/bin/nosetests-2.7
+[0m-- catkin 0.6.19
+[0m-- BUILD_SHARED_LIBS is on
+[0m-- [35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0m-- [35m~~ [0m traversing 21 packages in topological order:
+[0m-- [35m~~ [0m - [1m[34mdynamixel_driver
+[0m-- [35m~~ [0m - [1m[34mdynamixel_motor [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34mdynamixel_tutorials
+[0m-- [35m~~ [0m - [1m[34mdynamixel_controllers
+[0m-- [35m~~ [0m - [1m[34mdynamixel_msgs
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_bringup
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_description
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_moveit_demos
+[0m-- [35m~~ [0m - [1m[34mbeginner_tutorials
+[0m-- [35m~~ [0m - [1m[34mhello_world
+[0m-- [35m~~ [0m - [1m[34mmy_first_ros_pkg
+[0m-- [35m~~ [0m - [1m[34moroca_ros_tutorials
+[0m-- [35m~~ [0m - [1m[34mfind_object_2d
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_kinect_calibration
+[0m-- [35m~~ [0m - [1m[34marm_description
+[0m-- [35m~~ [0m - [1m[34mtestbot_description
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_ikfast_plugin
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_block_manipulation
+[0m-- [35m~~ [0m - [1m[34moros_m_description
+[0m-- [35m~~ [0m - [1m[34mturtlebot_arm_moveit_config
+[0m-- [35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mdynamixel_driver[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(dynamixel_motor/dynamixel_driver)
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'dynamixel_motor[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(dynamixel_motor/dynamixel_motor)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mdynamixel_tutorials[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(dynamixel_motor/dynamixel_tutorials)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mdynamixel_controllers[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(dynamixel_motor/dynamixel_controllers)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- dynamixel_controllers: 0 messages, 9 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mdynamixel_msgs[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(dynamixel_motor/dynamixel_msgs)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- dynamixel_msgs: 3 messages, 0 services
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'turtlebot_arm[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_bringup[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_bringup)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_description)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_moveit_demos[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_moveit_demos)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mbeginner_tutorials[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(beginner_tutorials)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- beginner_tutorials: 1 messages, 1 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mhello_world[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(hello_world)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mmy_first_ros_pkg[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(my_first_ros_pkg)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34moroca_ros_tutorials[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(oroca_ros_tutorials)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- oroca_ros_tutorials: 1 messages, 1 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mfind_object_2d[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(find-object)
+[0m-- CATKIN_BUILD=TRUE
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- find_object_2d: 1 messages, 0 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_kinect_calibration[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_kinect_calibration)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- Boost version: 1.54.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m-- Boost version: 1.54.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   date_time
+[0m--   iostreams
+[0m--   serialization
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- looking for PCL_COMMON
+[0m-- looking for PCL_OCTREE
+[0m-- looking for PCL_IO
+[0m-- looking for PCL_KDTREE
+[0m-- looking for PCL_SEARCH
+[0m-- looking for PCL_SAMPLE_CONSENSUS
+[0m-- looking for PCL_FILTERS
+[0m-- looking for PCL_FEATURES
+[0m-- looking for PCL_KEYPOINTS
+[0m-- looking for PCL_GEOMETRY
+[0m-- looking for PCL_SEGMENTATION
+[0m-- looking for PCL_VISUALIZATION
+[0m-- looking for PCL_OUTOFCORE
+[0m-- looking for PCL_REGISTRATION
+[0m-- looking for PCL_RECOGNITION
+[0m-- looking for PCL_SURFACE
+[0m-- looking for PCL_PEOPLE
+[0m-- looking for PCL_TRACKING
+[0m-- looking for PCL_APPS
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34marm_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(Dual_arm/arm_description)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mtestbot_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(testbot_description)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_ikfast_plugin[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_ikfast_plugin)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- Boost version: 1.54.0
+[0m-- Eigen found (include: /usr/include/eigen3)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_block_manipulation[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_block_manipulation)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- Boost version: 1.54.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m-- Boost version: 1.54.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   date_time
+[0m--   iostreams
+[0m--   serialization
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- checking for module 'openni-dev'
+[0m--   package 'openni-dev' not found
+[0m-- looking for PCL_COMMON
+[0m-- looking for PCL_OCTREE
+[0m-- looking for PCL_IO
+[0m-- looking for PCL_KDTREE
+[0m-- looking for PCL_SEARCH
+[0m-- looking for PCL_SAMPLE_CONSENSUS
+[0m-- looking for PCL_FILTERS
+[0m-- looking for PCL_FEATURES
+[0m-- looking for PCL_KEYPOINTS
+[0m-- looking for PCL_GEOMETRY
+[0m-- looking for PCL_SEGMENTATION
+[0m-- looking for PCL_VISUALIZATION
+[0m-- looking for PCL_OUTOFCORE
+[0m-- looking for PCL_REGISTRATION
+[0m-- looking for PCL_RECOGNITION
+[0m-- looking for PCL_SURFACE
+[0m-- looking for PCL_PEOPLE
+[0m-- looking for PCL_TRACKING
+[0m-- looking for PCL_APPS
+[0m-- Generating .msg files for action turtlebot_arm_block_manipulation/BlockDetection /home/kimkiseo/catkin_ws/src/turtlebot_arm/turtlebot_arm_block_manipulation/action/BlockDetection.action
+[0m-- Generating .msg files for action turtlebot_arm_block_manipulation/InteractiveBlockManipulation /home/kimkiseo/catkin_ws/src/turtlebot_arm/turtlebot_arm_block_manipulation/action/InteractiveBlockManipulation.action
+[0m-- Generating .msg files for action turtlebot_arm_block_manipulation/PickAndPlace /home/kimkiseo/catkin_ws/src/turtlebot_arm/turtlebot_arm_block_manipulation/action/PickAndPlace.action
+[0m-- turtlebot_arm_block_manipulation: 21 messages, 0 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34moros_m_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(oros_m_description)
+[0m-- Using these message generators: gencpp;genlisp;genpy
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mturtlebot_arm_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(turtlebot_arm/turtlebot_arm_moveit_config)
+[0m-- Configuring done
+[0m-- Generating done
+[0m-- Build files have been written to: /home/kimkiseo/catkin_ws/build
+[0m[34m####[0m
+[34m#### Running command: [1m"make install -j4 -l4"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetSpeed
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_TorqueEnable
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_RestartController
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] [  0%] [  0%] Built target _dynamixel_controllers_generate_messages_check_deps_StopController
+Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
+Built target _dynamixel_controllers_generate_messages_check_deps_StartController
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target _beginner_tutorials_generate_messages_check_deps_Num
+[0m[  0%] [  0%] Built target _dynamixel_msgs_generate_messages_check_deps_JointState
+Built target _dynamixel_msgs_generate_messages_check_deps_MotorStateList
+[35m[1mScanning dependencies of target _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+[0m[  0%] [  0%] Built target _dynamixel_msgs_generate_messages_check_deps_MotorState
+Built target _beginner_tutorials_generate_messages_check_deps_Num
+[  0%] Built target _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+[  0%] [  0%] Built target _oroca_ros_tutorials_generate_messages_check_deps_srvTutorial
+Built target sensor_msgs_generate_messages_cpp
+[  0%] [  0%] Built target sensor_msgs_generate_messages_py
+Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target _find_object_2d_generate_messages_check_deps_ObjectsStamped
+[  1%] Built target turtlebot_arm_moveit_ikfast_kinematics_plugin
+[  1%] Built target _oroca_ros_tutorials_generate_messages_check_deps_msgTutorial
+[  1%] [  1%] Built target geometry_msgs_generate_messages_cpp
+Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target calibrate_kinect_checkerboard
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionFeedback
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionFeedback
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionAction
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceFeedback
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceResult
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceAction
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationAction
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceGoal
+Built target geometry_msgs_generate_messages_lisp
+[  2%] [  2%] Built target actionlib_msgs_generate_messages_lisp
+Built target geometry_msgs_generate_messages_py
+[  2%] [  7%] Built target actionlib_msgs_generate_messages_py
+Built target dynamixel_controllers_generate_messages_py
+[ 12%] Built target dynamixel_controllers_generate_messages_lisp
+[ 16%] Built target dynamixel_controllers_generate_messages_cpp
+[ 20%] [ 20%] Built target dynamixel_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target beginner_tutorials_generate_messages_py
+[0mBuilt target dynamixel_msgs_generate_messages_py
+[ 21%] Built target dynamixel_msgs_generate_messages_cpp
+[ 21%] [35m[1mScanning dependencies of target beginner_tutorials_generate_messages_lisp
+[0m[35m[1mScanning dependencies of target beginner_tutorials_generate_messages_cpp
+[0m[34m[1mGenerating Python from MSG beginner_tutorials/Num
+[0m[ 21%] [ 21%] [ 22%] Built target oroca_ros_tutorials_generate_messages_cpp
+[34m[1mGenerating C++ code from beginner_tutorials/Num.msg
+[0m[ 23%] [34m[1mGenerating Lisp code from beginner_tutorials/Num.msg
+[0m[34m[1mGenerating Lisp code from beginner_tutorials/AddTwoInts.srv
+[0m[ 24%] [34m[1mGenerating Python code from SRV beginner_tutorials/AddTwoInts
+[0m[ 24%] Built target beginner_tutorials_generate_messages_lisp
+[ 24%] [ 25%] [34m[1mGenerating C++ code from beginner_tutorials/AddTwoInts.srv
+[0m[ 27%] Built target oroca_ros_tutorials_generate_messages_py
+[34m[1mGenerating Python msg __init__.py for beginner_tutorials
+[0m[ 28%] [34m[1mGenerating Python srv __init__.py for beginner_tutorials
+[0m[ 28%] Built target beginner_tutorials_generate_messages_py
+[ 29%] Built target oroca_ros_tutorials_generate_messages_lisp
+[ 30%] Built target ros_tutorial_msg_publisher
+[ 30%] Built target ros_tutorial_msg_subscriber
+[ 31%] Built target ros_tutorial_srv_client
+[ 31%] Built target ros_tutorial_srv_server
+[ 31%] Built target find_object_2d_generate_messages_cpp
+[ 32%] Built target find_object_2d_generate_messages_lisp
+[ 33%] Built target find_object_2d_generate_messages_py
+[ 54%] [ 54%] Built target turtlebot_arm_block_manipulation_generate_messages_lisp
+Built target turtlebot_arm_block_manipulation_generate_messages_cpp
+[ 65%] Built target turtlebot_arm_block_manipulation_generate_messages_py
+[ 65%] Built target dynamixel_msgs_generate_messages
+[ 65%] Built target dynamixel_controllers_generate_messages
+[ 65%] [ 65%] Built target oroca_ros_tutorials_generate_messages
+Built target find_object_2d_generate_messages
+[ 65%] Built target print_objects_detected
+[ 66%] Built target tf_example
+[ 66%] Built target turtlebot_arm_block_manipulation_gencpp
+[ 66%] Built target turtlebot_arm_block_manipulation_generate_messages
+[ 67%] Built target block_manipulation_demo
+[ 67%] Built target block_detection_action_server
+[ 67%] [ 67%] Built target interactive_manipulation_action_server
+Built target beginner_tutorials_generate_messages_cpp
+[ 97%] Built target find_object
+[35m[1mScanning dependencies of target beginner_tutorials_generate_messages
+[0m[ 97%] Built target beginner_tutorials_generate_messages
+[ 98%] Built target pick_and_place_action_server
+[100%] Built target find_object_2d
+[36mInstall the project...
+[0m-- Install configuration: ""
+-- Installing: /home/kimkiseo/catkin_ws/install/_setup_util.py
+-- Installing: /home/kimkiseo/catkin_ws/install/env.sh
+-- Installing: /home/kimkiseo/catkin_ws/install/setup.bash
+-- Installing: /home/kimkiseo/catkin_ws/install/setup.sh
+-- Installing: /home/kimkiseo/catkin_ws/install/setup.zsh
+-- Installing: /home/kimkiseo/catkin_ws/install/.rosinstall
++ cd /home/kimkiseo/catkin_ws/src/dynamixel_motor/dynamixel_driver
++ mkdir -p /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages
++ /usr/bin/env PYTHONPATH=/home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages:/home/kimkiseo/catkin_ws/build/lib/python2.7/dist-packages:/home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages CATKIN_BINARY_DIR=/home/kimkiseo/catkin_ws/build /usr/bin/python /home/kimkiseo/catkin_ws/src/dynamixel_motor/dynamixel_driver/setup.py build --build-base /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver install --install-layout=deb --prefix=/home/kimkiseo/catkin_ws/install --install-scripts=/home/kimkiseo/catkin_ws/install/bin
+running build
+running build_py
+creating /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7
+creating /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver
+copying src/dynamixel_driver/dynamixel_io.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver
+copying src/dynamixel_driver/__init__.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver
+copying src/dynamixel_driver/dynamixel_const.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver
+copying src/dynamixel_driver/dynamixel_serial_proxy.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver
+running install
+running install_lib
+creating /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver/dynamixel_io.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver/__init__.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver/dynamixel_const.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_driver/lib.linux-x86_64-2.7/dynamixel_driver/dynamixel_serial_proxy.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver/dynamixel_io.py to dynamixel_io.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver/__init__.py to __init__.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver/dynamixel_const.py to dynamixel_const.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver/dynamixel_serial_proxy.py to dynamixel_serial_proxy.pyc
+running install_egg_info
+Writing /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_driver-0.4.1.egg-info
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/dynamixel_driver.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_driver/cmake/dynamixel_driverConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_driver/cmake/dynamixel_driverConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_driver/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_driver/change_id.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_driver/info_dump.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_driver/set_servo_config.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_driver/set_torque.py
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_motor/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/dynamixel_tutorials.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/controller_manager.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_meta_controller.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_dual_motor_controller.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_triple_motor_controller.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_tilt_controller.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/controller_manager.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_tilt_controller.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/start_dual_motor_controller.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/controller_spawner.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/launch/controller_spawner.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/dynamixel_joint_controllers.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/triple_motor.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/dual_motor.yaml~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/triple_motor.yaml~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/tilt.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/tilt.yaml~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/dynamixel_joint_controllers.yaml~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/dual_motor.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_tutorials/config/joint_trajectory_controllers.yaml~
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/RestartController.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/SetComplianceMargin.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/SetCompliancePunch.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/SetComplianceSlope.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/SetSpeed.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/SetTorqueLimit.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/StartController.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/StopController.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/srv/TorqueEnable.srv
++ cd /home/kimkiseo/catkin_ws/src/dynamixel_motor/dynamixel_controllers
++ mkdir -p /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages
++ /usr/bin/env PYTHONPATH=/home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages:/home/kimkiseo/catkin_ws/build/lib/python2.7/dist-packages:/home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages CATKIN_BINARY_DIR=/home/kimkiseo/catkin_ws/build /usr/bin/python /home/kimkiseo/catkin_ws/src/dynamixel_motor/dynamixel_controllers/setup.py build --build-base /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers install --install-layout=deb --prefix=/home/kimkiseo/catkin_ws/install --install-scripts=/home/kimkiseo/catkin_ws/install/bin
+running build
+running build_py
+creating /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7
+creating /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_position_controller_dual_motor.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_torque_controller_dual_motor.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/__init__.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_position_controller.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_controller.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_torque_controller.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+copying src/dynamixel_controllers/joint_trajectory_action_controller.py -> /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers
+running install
+running install_lib
+creating /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_position_controller_dual_motor.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_torque_controller_dual_motor.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/__init__.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_position_controller.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_controller.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_torque_controller.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+copying /home/kimkiseo/catkin_ws/build/dynamixel_motor/dynamixel_controllers/lib.linux-x86_64-2.7/dynamixel_controllers/joint_trajectory_action_controller.py -> /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_position_controller_dual_motor.py to joint_position_controller_dual_motor.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_torque_controller_dual_motor.py to joint_torque_controller_dual_motor.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/__init__.py to __init__.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_position_controller.py to joint_position_controller.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_controller.py to joint_controller.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_torque_controller.py to joint_torque_controller.pyc
+byte-compiling /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/joint_trajectory_action_controller.py to joint_trajectory_action_controller.pyc
+running install_egg_info
+Writing /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers-0.4.1.egg-info
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/cmake/dynamixel_controllers-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StopControllerResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/RestartControllerResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetCompliancePunchRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StartControllerRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/TorqueEnableRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceSlopeRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceMarginResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StopController.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetTorqueLimitRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetSpeedRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetTorqueLimit.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetCompliancePunch.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/RestartController.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetCompliancePunchResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceMarginRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetSpeedResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/TorqueEnable.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/TorqueEnableResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceSlopeResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetTorqueLimitResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetSpeed.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StopControllerRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceMargin.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StartControllerResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/RestartControllerRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/SetComplianceSlope.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_controllers/StartController.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_SetCompliancePunch.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/SetCompliancePunch.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/dynamixel_controllers-srv.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_RestartController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_TorqueEnable.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_StopController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/SetTorqueLimit.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/StartController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/StopController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_SetSpeed.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_StartController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_SetTorqueLimit.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/SetSpeed.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_SetComplianceMargin.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/SetComplianceSlope.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/_package_SetComplianceSlope.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/TorqueEnable.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/RestartController.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_controllers/srv/SetComplianceMargin.lisp
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/dynamixel_controllers ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/dynamixel_controllers/srv ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_TorqueEnable.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_StopController.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetSpeed.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetComplianceMargin.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetSpeed.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_StartController.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetTorqueLimit.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetTorqueLimit.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetCompliancePunch.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_StopController.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetCompliancePunch.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_StartController.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_TorqueEnable.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_RestartController.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_RestartController.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetComplianceSlope.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetComplianceMargin.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/_SetComplianceSlope.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_controllers/srv/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/dynamixel_controllers.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/cmake/dynamixel_controllers-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/cmake/dynamixel_controllersConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/cmake/dynamixel_controllersConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/launch/controller_manager.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_controllers/launch/controller_manager.launch~
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_controllers/controller_manager.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/dynamixel_controllers/controller_spawner.py
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/msg/JointState.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/msg/MotorState.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/msg/MotorStateList.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/cmake/dynamixel_msgs-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_msgs
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_msgs/JointState.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_msgs/MotorStateList.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/dynamixel_msgs/MotorState.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/JointState.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/_package_MotorStateList.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/MotorState.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/_package_MotorState.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/MotorStateList.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/_package_JointState.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/dynamixel_msgs/msg/dynamixel_msgs-msg.asd
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/dynamixel_msgs ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/dynamixel_msgs/msg ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_MotorState.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_JointState.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_JointState.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_MotorStateList.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_MotorState.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/_MotorStateList.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/msg/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/dynamixel_msgs/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/dynamixel_msgs.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/cmake/dynamixel_msgs-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/cmake/dynamixel_msgsConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/cmake/dynamixel_msgsConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/dynamixel_msgs/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_bringup.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/cmake/turtlebot_arm_bringupConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/cmake/turtlebot_arm_bringupConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/config
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/config/arm.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/launch/fake-arm.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_bringup/launch/arm.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_description.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/cmake/turtlebot_arm_descriptionConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/cmake/turtlebot_arm_descriptionConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/README
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/F2.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/F10.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/finger.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/F3.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/F4.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/ax12_box.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/meshes/mount.stl
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/urdf
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/urdf/arm.urdf.xacro
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/urdf/arm.urdf
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/urdf/arm_hardware.xacro
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_description/urdf/arm.xacro
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_moveit_demos.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_demos/cmake/turtlebot_arm_moveit_demosConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_demos/cmake/turtlebot_arm_moveit_demosConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_demos/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_moveit_demos/pick_and_place.py
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/msg/Num.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/srv/AddTwoInts.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorials-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/beginner_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/include/beginner_tutorials/AddTwoIntsResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/beginner_tutorials/Num.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/beginner_tutorials/AddTwoInts.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/beginner_tutorials/AddTwoIntsRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/srv/beginner_tutorials-srv.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/srv/_package_AddTwoInts.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/srv/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/msg/beginner_tutorials-msg.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/msg/_package_Num.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/beginner_tutorials/msg/_package.lisp
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/__init__.py ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/beginner_tutorials/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/beginner_tutorials.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorials-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/beginner_tutorials/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/hello_world.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/hello_world/cmake/hello_worldConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/hello_world/cmake/hello_worldConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/hello_world/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/my_first_ros_pkg.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/my_first_ros_pkg/cmake/my_first_ros_pkgConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/my_first_ros_pkg/cmake/my_first_ros_pkgConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/my_first_ros_pkg/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/msg/msgTutorial.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/srv/srvTutorial.srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/cmake/oroca_ros_tutorials-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/oroca_ros_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/include/oroca_ros_tutorials/srvTutorial.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/oroca_ros_tutorials/msgTutorial.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/oroca_ros_tutorials/srvTutorialRequest.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/oroca_ros_tutorials/srvTutorialResponse.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/srv/oroca_ros_tutorials-srv.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/srv/_package_srvTutorial.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/srv/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/srv/srvTutorial.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/msg/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/msg/oroca_ros_tutorials-msg.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/msg/_package_msgTutorial.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/oroca_ros_tutorials/msg/msgTutorial.lisp
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/oroca_ros_tutorials ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/oroca_ros_tutorials/msg ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/__init__.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/_msgTutorial.py ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/oroca_ros_tutorials/srv ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/srv
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/srv/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/srv/_srvTutorial.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/srv/_srvTutorial.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/srv/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/_msgTutorial.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/_msgTutorial.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/msg/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/oroca_ros_tutorials/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/oroca_ros_tutorials.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/cmake/oroca_ros_tutorials-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/cmake/oroca_ros_tutorialsConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/cmake/oroca_ros_tutorialsConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oroca_ros_tutorials/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/msg/ObjectsStamped.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/cmake/find_object_2d-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/find_object_2d
+-- Installing: /home/kimkiseo/catkin_ws/install/include/find_object_2d/ObjectsStamped.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d/msg/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d/msg/_package_ObjectsStamped.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d/msg/ObjectsStamped.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/find_object_2d/msg/find_object_2d-msg.asd
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/find_object_2d ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/find_object_2d/__init__.py ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/find_object_2d/msg ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/find_object_2d/msg/_ObjectsStamped.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/find_object_2d/msg/__init__.py ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/msg/_ObjectsStamped.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/msg/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/msg/_ObjectsStamped.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/msg/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/find_object_2d/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/find_object_2d.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/cmake/find_object_2d-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/cmake/find_object_2dConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/cmake/find_object_2dConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/launch/find_object_2d_gui.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/launch/find_object_2d.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/find_object_2d/launch/find_object_3d.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/libfind_object_2d.so
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/libfind_object_2d.so"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/find_object_2d/find_object_2d
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/find_object_2d/find_object_2d"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/find_object_2d/print_objects_detected
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/find_object_2d/print_objects_detected"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/find_object_2d/tf_example
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/find_object_2d/tf_example"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_kinect_calibration.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_kinect_calibration/cmake/turtlebot_arm_kinect_calibrationConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_kinect_calibration/cmake/turtlebot_arm_kinect_calibrationConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_kinect_calibration/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_kinect_calibration/calibrate_kinect_checkerboard
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_kinect_calibration/calibrate_kinect_checkerboard"
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_kinect_calibration/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_kinect_calibration/launch/calibrate.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/arm_description.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/arm_description/cmake/arm_descriptionConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/arm_description/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/testbot_description.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/testbot_description/cmake/testbot_descriptionConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/testbot_description/cmake/testbot_descriptionConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/testbot_description/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_ikfast_plugin.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_ikfast_plugin/cmake/turtlebot_arm_ikfast_pluginConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_ikfast_plugin/cmake/turtlebot_arm_ikfast_pluginConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_ikfast_plugin/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/libturtlebot_arm_moveit_ikfast_kinematics_plugin.so
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/libturtlebot_arm_moveit_ikfast_kinematics_plugin.so"
+-- Installing: /home/kimkiseo/catkin_ws/install/include
+-- Installing: /home/kimkiseo/catkin_ws/install/include/ikfast.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_ikfast_plugin/turtlebot_arm_moveit_ikfast_plugin_description.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/action/BlockDetection.action
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/action/InteractiveBlockManipulation.action
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/action/PickAndPlace.action
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionAction.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionActionGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionActionResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionActionFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/BlockDetectionFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationAction.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceAction.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceGoal.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceResult.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/msg/PickAndPlaceFeedback.msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/cmake/turtlebot_arm_block_manipulation-msg-paths.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceActionGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceActionFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionActionFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationAction.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationActionFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationActionResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionActionGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceActionResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceFeedback.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/PickAndPlaceAction.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/InteractiveBlockManipulationActionGoal.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionActionResult.h
+-- Installing: /home/kimkiseo/catkin_ws/install/include/turtlebot_arm_block_manipulation/BlockDetectionAction.h
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/turtlebot_arm_block_manipulation-msg.asd
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionAction.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationActionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_InteractiveBlockManipulationActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionGoal.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/PickAndPlaceResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_PickAndPlaceActionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionActionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/_package_BlockDetectionFeedback.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/BlockDetectionResult.lisp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/common-lisp/ros/turtlebot_arm_block_manipulation/msg/InteractiveBlockManipulationResult.lisp
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/__init__.py ...
+Listing /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionAction.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationAction.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceAction.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceFeedback.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceGoal.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceResult.py ...
+Compiling /home/kimkiseo/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/__init__.py ...
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/__init__.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionAction.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceAction.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationAction.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationAction.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceAction.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionResult.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionFeedback.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionAction.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionGoal.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceActionFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_InteractiveBlockManipulationActionGoal.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionActionResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_PickAndPlaceResult.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/msg/_BlockDetectionFeedback.py
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/python2.7/dist-packages/turtlebot_arm_block_manipulation/__init__.pyc
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_block_manipulation.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/cmake/turtlebot_arm_block_manipulation-msg-extras.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/cmake/turtlebot_arm_block_manipulationConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/cmake/turtlebot_arm_block_manipulationConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/block_detection_action_server
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/block_detection_action_server"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/interactive_manipulation_action_server
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/interactive_manipulation_action_server"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/pick_and_place_action_server
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/pick_and_place_action_server"
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/block_manipulation_demo
+-- Removed runtime path from "/home/kimkiseo/catkin_ws/install/lib/turtlebot_arm_block_manipulation/block_manipulation_demo"
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/demo
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/demo/block_manipulation_demo.rviz
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/demo/block_manipulation_demo.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/demo/block_manipulation_moveit.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/demo/block_manipulation_demo.cpp
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_block_manipulation/launch/block_manipulation.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/oros_m_description.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oros_m_description/cmake/oros_m_descriptionConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oros_m_description/cmake/oros_m_descriptionConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/oros_m_description/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/lib/pkgconfig/turtlebot_arm_moveit_config.pc
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/cmake/turtlebot_arm_moveit_configConfig.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/cmake/turtlebot_arm_moveit_configConfig-version.cmake
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/package.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/demo.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/planning_pipeline.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/setup_assistant.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/warehouse.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/run_benchmark_ompl.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/turtlebot_arm_moveit_controller_manager.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/move_group.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/moveit_rviz.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/fake_moveit_controller_manager.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/moveit.rviz
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/default_warehouse_db.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/trajectory_execution.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/turtlebot_arm_moveit.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/planning_context.launch
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/warehouse_settings.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/turtlebot_arm_moveit_sensor_manager.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/ompl_planning_pipeline.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/launch/sensor_manager.launch.xml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/ompl_planning.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/joint_limits.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/turtlebot_arm.srdf
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/controllers.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/kinematics.yaml
+-- Installing: /home/kimkiseo/catkin_ws/install/share/turtlebot_arm_moveit_config/config/fake_controllers.yaml
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_wskimkiseo@kimkiseo-TZ75B:~/catkin_ws$ cd - [K
+/home/kimkiseo/catkin_ws/src/beginner_tutorials
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ roscd beginner_tutorials/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ ls
+CMakeLists.txt  CMakeLists.txt~  [0m[01;34mmsg[0m  package.xml  package.xml~  [01;34mscripts[0m  [01;34msrc[0m  [01;34msrv[0m  typescript
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorialskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials$ ls[K[Kvd[K[Kcd scripts/
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ ls
+[0m[01;32madd_two_ints_client.py[0m   [01;32madd_two_ints_server.py[0m   [01;32mlistener.py[0m
+[01;32madd_two_ints_client.py~[0m  [01;32madd_two_ints_server.py~[0m  [01;32mtalker.py[0m
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ gedit add_two_ints_server.py
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ chmod +x d[Kadd_two_ints_server.py
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ r[Kd[Kfg[K[Kgedit add_two_ints_client.py
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ chmod +x add_two_ints_client.py
+]0;kimkiseo@kimkiseo-TZ75B: ~/catkin_ws/src/beginner_tutorials/scriptskimkiseo@kimkiseo-TZ75B:~/catkin_ws/src/beginner_tutorials/scripts$ cm
+Base path: /home/kimkiseo/catkin_ws
+Source space: /home/kimkiseo/catkin_ws/src
+Build space: /home/kimkiseo/catkin_ws/build
+Devel space: /home/kimkiseo/catkin_ws/devel
+Install space: /home/kimkiseo/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"make cmake_check_build_system"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+[34m####[0m
+[34m#### Running command: [1m"make -j4 -l4"[0m[34m in [1m"/home/kimkiseo/catkin_ws/build"[0m
+[34m####[0m
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetTorqueLimit
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_TorqueEnable
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceMargin
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetSpeed
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetCompliancePunch
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_SetComplianceSlope
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_RestartController
+[  0%] [  0%] Built target _dynamixel_controllers_generate_messages_check_deps_StartController
+Built target std_msgs_generate_messages_lisp
+[  0%] Built target _dynamixel_controllers_generate_messages_check_deps_StopController
+[  0%] [  0%] Built target std_msgs_generate_messages_py
+Built target _dynamixel_msgs_generate_messages_check_deps_MotorStateList
+[  0%] Built target _dynamixel_msgs_generate_messages_check_deps_JointState
+[  0%] Built target _dynamixel_msgs_generate_messages_check_deps_MotorState
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _beginner_tutorials_generate_messages_check_deps_Num
+[  0%] Built target _oroca_ros_tutorials_generate_messages_check_deps_srvTutorial
+[  0%] Built target _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+[  0%] Built target _oroca_ros_tutorials_generate_messages_check_deps_msgTutorial
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] [  0%] Built target sensor_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target _find_object_2d_generate_messages_check_deps_ObjectsStamped
+[  1%] Built target turtlebot_arm_moveit_ikfast_kinematics_plugin
+[  1%] Built target geometry_msgs_generate_messages_cpp
+[  1%] Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target calibrate_kinect_checkerboard
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionFeedback
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionFeedback
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationResult
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionResult
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionAction
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionGoal
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionResult
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceFeedback
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceResult
+[  2%] [  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationActionResult
+Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_BlockDetectionActionGoal
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationGoal
+[  2%] Built target geometry_msgs_generate_messages_lisp
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_InteractiveBlockManipulationAction
+[  2%] Built target actionlib_msgs_generate_messages_lisp
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceAction
+[  2%] Built target _turtlebot_arm_block_manipulation_generate_messages_check_deps_PickAndPlaceGoal
+[  2%] Built target geometry_msgs_generate_messages_py
+[  3%] [  7%] Built target actionlib_msgs_generate_messages_py
+Built target dynamixel_controllers_generate_messages_py
+[ 12%] Built target dynamixel_controllers_generate_messages_lisp
+[ 14%] [ 18%] Built target dynamixel_msgs_generate_messages_lisp
+Built target dynamixel_controllers_generate_messages_cpp
+[ 20%] Built target dynamixel_msgs_generate_messages_py
+[ 21%] Built target dynamixel_msgs_generate_messages_cpp
+[ 23%] [ 23%] [ 24%] Built target beginner_tutorials_generate_messages_lisp
+Built target beginner_tutorials_generate_messages_cpp
+Built target oroca_ros_tutorials_generate_messages_cpp
+[ 26%] Built target beginner_tutorials_generate_messages_py
+[ 28%] [ 29%] Built target oroca_ros_tutorials_generate_messages_py
+Built target oroca_ros_tutorials_generate_messages_lisp
+[ 29
