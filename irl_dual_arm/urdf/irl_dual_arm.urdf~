@@ -164,17 +164,27 @@
     </inertial>
   </link>
 
+<<<<<<< HEAD
 <!-- robotis's 3DOF gripper_RIGHT -->
   <joint name="joint6" type="fixed">
     <parent link="link5"/>
     <child link="gr_rbase"/>
     <origin rpy="-1.57 -1.57 0" xyz="0 0 0.19"/>
 <!--
+=======
+<!-- robotis's 3DOF gripper -->
+
+  <joint name="joint6" type="revolute">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+>>>>>>> master
     <axis xyz="0 0 1"/>
     <limit effort="30" lower="-1.74" upper="1.74" velocity="1.571"/>
 -->
   </joint>
 
+<<<<<<< HEAD
   <link name="gr_rbase">
     <collision>
       <origin rpy="-1.57 0 -0.73" xyz="0 -0.028 0"/>
@@ -190,7 +200,6 @@
     </visual>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-<<<<<<< HEAD
       <mass value="1"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
@@ -209,10 +218,6 @@
       <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_1.dae" scale="1 1 1"/>
-=======
-       <geometry>
-        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
->>>>>>> master
       </geometry>
     </collision>
     <visual>
@@ -243,7 +248,6 @@
     <collision>
       <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
       <geometry>
-<<<<<<< HEAD
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_2.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
@@ -252,17 +256,29 @@
       <geometry>
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_2.dae" scale="0.001 0.001 0.001"/>
 =======
-        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
+<!-- link6 -->
+  <link name="link6">
+       <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+       <geometry>
+        <box size = "0.1 0.1 0.5"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <geometry>
+        <box size = "0.1 0.1 0.5"/>
 >>>>>>> master
       </geometry>
     </visual>
     <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <mass value="1"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
 
+<<<<<<< HEAD
 
 
 
@@ -270,4 +286,6 @@
 
 
 
+=======
+>>>>>>> master
 </robot>

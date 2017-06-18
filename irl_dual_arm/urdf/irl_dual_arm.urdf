@@ -164,14 +164,13 @@
     </inertial>
   </link>
 
-<<<<<<< HEAD
+
 <!-- robotis's 3DOF gripper_RIGHT -->
   <joint name="joint6" type="fixed">
     <parent link="link5"/>
     <child link="gr_rbase"/>
     <origin rpy="-1.57 -1.57 0" xyz="0 0 0.19"/>
-<!--
-=======
+
 <!-- robotis's 3DOF gripper -->
 
   <joint name="joint6" type="revolute">
@@ -184,7 +183,6 @@
 -->
   </joint>
 
-<<<<<<< HEAD
   <link name="gr_rbase">
     <collision>
       <origin rpy="-1.57 0 -0.73" xyz="0 -0.028 0"/>
@@ -278,14 +276,4 @@
     </inertial>
   </link>
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> master
 </robot>
