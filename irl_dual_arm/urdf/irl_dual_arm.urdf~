@@ -190,6 +190,7 @@
     </visual>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
+<<<<<<< HEAD
       <mass value="1"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
@@ -208,6 +209,10 @@
       <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_1.dae" scale="1 1 1"/>
+=======
+       <geometry>
+        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
+>>>>>>> master
       </geometry>
     </collision>
     <visual>
@@ -238,6 +243,7 @@
     <collision>
       <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
       <geometry>
+<<<<<<< HEAD
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_2.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
@@ -245,6 +251,9 @@
       <origin rpy="-1.57 0 -1.57" xyz="0 0 -0.013"/>
       <geometry>
         <mesh filename="package://irl_dual_arm/mesh/gripper/r_1_2.dae" scale="0.001 0.001 0.001"/>
+=======
+        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
+>>>>>>> master
       </geometry>
     </visual>
     <inertial>
