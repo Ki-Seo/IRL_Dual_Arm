@@ -4,4 +4,3 @@
 
 1. RVIZ 시뮬레이션 실행
 $ roslaunch irl_dual_arm irl_dual_arm.launch
-$ rosrun rviz rviz
