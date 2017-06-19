@@ -30,7 +30,7 @@ class pos:
             if self.flag == True: 
                 self.pub_1.publish(math.radians(self.command.pos_1))
                 self.pub_2.publish(math.radians(self.command.pos_2))
-                self.pub_3.publish(math.radians(self.command.pos_3))
+                self.pub_2.publish(math.radians(self.command.pos_3))
                     
                 print("publish done")
                 self.flag = False

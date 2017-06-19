@@ -10,7 +10,7 @@
                 --port=pan_tilt_port
                 --type=simple
                 first_controller
-		second_controller
+		secound_controller
 		third_controller"
           output="screen"/>
 </launch>
