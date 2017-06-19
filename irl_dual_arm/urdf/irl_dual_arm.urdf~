@@ -185,13 +185,13 @@
        <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-        <mesh filename="package://irl_dual_arm/urdf/mesh/link5.dae" scale="1 1 1"/>
+        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://irl_dual_arm/urdf/mesh/link5.dae" scale="1 1 1"/>
+        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <inertial>
