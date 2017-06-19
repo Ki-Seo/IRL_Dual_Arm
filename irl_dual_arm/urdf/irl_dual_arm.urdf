@@ -171,34 +171,34 @@
   </link>
 
 <!-- robotis's 3DOF gripper -->
-<!--
+
   <joint name="joint6" type="revolute">
-    <parent link="link4"/>
-    <child link="link5"/>
+    <parent link="link5"/>
+    <child link="link6"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
     <limit effort="30" lower="-1.74" upper="1.74" velocity="1.571"/>
   </joint>
 
-
+<!-- link6 -->
   <link name="link6">
        <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
        <geometry>
-        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
+        <box size = "0.1 0.1 0.5"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <mesh filename="package://irl_dual_arm/urdf/mesh/gripper.dae" scale="1 1 1"/>
+        <box size = "0.1 0.1 0.5"/>
       </geometry>
     </visual>
     <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <mass value="1"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
--->
+
 </robot>
