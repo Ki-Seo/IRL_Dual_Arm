@@ -1,8 +1,10 @@
 # IRL_Dual_Arm
-지능로봇 연구실 양팔로봇 제어 패키지
+#### 지능로봇 연구실 양팔로봇 제어 패키지
+---------------------------------------
+1. 설치
 
-
-1. RVIZ 시뮬레이션
+2. 실행
+RVIZ 시뮬레이션
 $ roslaunch irl_dual_arm irl_dual_arm.launch
 $ rosrun rviz rviz
 
