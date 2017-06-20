@@ -1,10 +1,16 @@
 # IRL_Dual_Arm
 #### 지능로봇 연구실 양팔로봇 제어 패키지
+
+
+
 ## 설치
 - 패키지 복사
 <pre><code>$ cd /home/catkin_ws  #your ROS workspace</code></pre>
 <pre><code>$ cd git clone https://github.com/Ki-Seo/IRL_Dual_Arm.git </code></pre>
 ---------------
+
+
+
 ## 실행
 #### RVIZ 시뮬레이션 
 - urdf file 실행
