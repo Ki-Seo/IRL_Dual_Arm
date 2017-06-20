@@ -1,7 +1,8 @@
 # IRL_Dual_Arm
 #### 지능로봇 연구실 양팔로봇 제어 패키지
-
-
+- gripper_controller : 그리퍼 제어 패키지
+- irl_dual_arm : 양팔로봇 제어 패키지 (시뮬레이션)
+- EtherCAT master(추가예정) : 통신 마스터 노드
 
 ## 설치
 - 패키지 복사
