@@ -7,7 +7,7 @@
 ## 설치
 - 패키지 복사
 <pre><code>$ cd /home/catkin_ws  #your ROS workspace</code></pre>
-<pre><code>$ cd git clone https://github.com/Ki-Seo/IRL_Dual_Arm.git </code></pre>
+<pre><code>$ git clone https://github.com/Ki-Seo/IRL_Dual_Arm.git </code></pre>
 ---------------
 
 
