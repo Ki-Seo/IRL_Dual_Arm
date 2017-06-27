@@ -21,6 +21,18 @@
 
 
 #### 그리퍼 위치제어
+- 다이나믹셀 제어 노드 실행 
+참고 사이트 : http://wiki.ros.org/dynamixel_controllers/Tutorials/CreatingJointPositionController, http://rosclub.cn/post-489.html 
+  1개 제어 
+    <pre><code>$ roscore</code></pre> 
+    <pre><code>$ roslaunch dynamixel_tutorials controller_manager.launch</code></pre> 
+    <pre><code>$ roslaunch dynamixel tutorials start_tilt_controller.launch</code></pre> 
+    <pre><code>$ rostopic pub -1 /tilt_controller/command std_msgs/Float64 -- 1.5</code></pre> 
+  다중 제어 
+    <pre><code>$ roscore</code></pre> 
+    <pre><code>$ roslaunch dynamixel_tutorials controller_manager.launch</code></pre> 
+    <pre><code>$ roslaunch dynamixel tutorials start_(dual or triple)_controller.launch</code></pre> 
+    <pre><code>$ rostopic pub -1 /(first or second or third)_controller/command std_msgs/Float64 -- 1.5</code></pre> 
 - 그리퍼 제어 노드 실행
 <pre><code>$ roscore</code></pre>
 <pre><code>$ rosrun gripper_controller pos_control.py</code></pre>
