@@ -192,12 +192,13 @@
     </inertial>
   </link>
 
+<!-- 					-->
   <joint name="r_finger1_1" type="revolute">
     <parent link="gr_rbase"/>
     <child link="r_finger_1_1"/>
     <origin rpy="0 0 0" xyz="0.0475 -0.002 0.0285"/>
     <axis xyz="0 0 1"/>
-    <limit effort="30" lower="0" upper="0.87" velocity="1.571"/>
+    <limit effort="30" lower="0" upper="0.7" velocity="1.571"/>
   </joint>
 
   <link name="r_finger_1_1">
@@ -220,6 +221,7 @@
     </inertial>
   </link>
 
+<!-- 							-->
   <joint name="r_finger1_2" type="revolute">
     <parent link="r_finger_1_1"/>
     <child link="r_finger_1_2"/>
@@ -249,4 +251,172 @@
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
+
+
+
+
+
+<!-- 							-->
+  <joint name="r_finger2_1" type="revolute">
+    <parent link="gr_rbase"/>
+    <child link="r_finger_2_1"/>
+    <origin rpy="0 0 0" xyz="0.0475 -0.002 -0.017"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="30" lower="0" upper="0.7" velocity="1.571"/>
+  </joint>
+
+  <link name="r_finger_2_1">
+    <collision>
+      <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_2_1.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_2_1.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+
+
+
+  <joint name="r_finger2_2" type="revolute">
+    <parent link="r_finger_2_1"/>
+    <child link="r_finger_2_2"/>
+    <origin rpy="0 0 0" xyz="0.05 -0.005 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="30" lower="0" upper="1.4" velocity="1.571"/>
+    <mimic joint="r_finger2_1" multiplier="1.6" offset="0" />
+    <!-- gear ratio = 1.4/0.87 -->
+  </joint>
+
+  <link name="r_finger_2_2">
+    <collision>
+      <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_2_2.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="3.14 -1.57 0" xyz="-0.005 0.001 0.0065"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_2_2.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+<!-- 							-->
+
+
+
+
+
+
+
+
+
+
+<!-- 							-->
+<!-- 							-->
+<!-- 							-->
+  <joint name="r_finger3_1" type="revolute">
+    <parent link="gr_rbase"/>
+    <child link="r_finger_3_1"/>
+    <origin rpy="3.14 0 1.57" xyz="0.0185 0.023 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="30" lower="0" upper="0.7" velocity="1.571"/>
+  </joint>
+
+  <link name="r_finger_3_1">
+    <collision>
+      <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_3_1.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="1.57 0 1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_3_1.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <joint name="r_finger3_2" type="revolute">
+    <parent link="r_finger_3_1"/>
+    <child link="r_finger_3_2"/>
+    <origin rpy="0 0 0" xyz="0.05 -0.005 -0.0065"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="30" lower="0" upper="1.4" velocity="1.571"/>
+    <mimic joint="r_finger3_1" multiplier="1.6" offset="0" />
+    <!-- gear ratio = 1.4/0.87 -->
+  </joint>
+
+  <link name="r_finger_3_2">
+    <collision>
+      <origin rpy="-1.57 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_3_2.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="3.14 -1.57 0" xyz="-0.005 0.001 0.0065"/>
+      <geometry>
+        <mesh filename="package://irl_dual_arm/mesh/gripper/r_3_2.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+<!-- 							-->
+<!-- 							-->
+<!-- 							-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </robot>
