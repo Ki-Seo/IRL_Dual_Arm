@@ -56,3 +56,8 @@
 - 모터 각도값 퍼블리시
 <pre><code>$ rostopic pub -1 /input_command gripper_controller/Inputpos '{pos_1 : 30, pos_2 : 60, pos_3 : 90}'</code></pre>
 -------
+
+### 가제보 시뮬레이션
+    <pre><code>$ roscore</code></pre> 
+    <pre><code>$ roslaunch seven_dof_arm_gazebo irl_dual_arm_gazebo_control.launch</code></pre> 
+
