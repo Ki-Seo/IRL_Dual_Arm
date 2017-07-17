@@ -58,6 +58,6 @@
 -------
 
 ### 가제보 시뮬레이션
-    <pre><code>$ roscore</code></pre> 
-    <pre><code>$ roslaunch seven_dof_arm_gazebo irl_dual_arm_gazebo_control.launch</code></pre> 
+<pre><code>$ roscore</code></pre> 
+<pre><code>$ roslaunch seven_dof_arm_gazebo irl_dual_arm_gazebo_control.launch</code></pre> 
 
