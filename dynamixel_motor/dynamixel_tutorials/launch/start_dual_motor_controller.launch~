@@ -9,6 +9,7 @@
           args="--manager=dxl_manager
                 --port=pan_tilt_port
                 --type=simple
-                dual_motor_controller"
+                first_controller
+		dual_controller"
           output="screen"/>
 </launch>

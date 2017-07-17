@@ -1,4 +1,4 @@
-    pan_controller:
+    fisrt_controller:
         controller:
             package: dynamixel_controllers
             module: joint_position_controller
@@ -11,7 +11,7 @@
             min: 0
             max: 4096
 
-    tilt_controller:
+    second_controller:
         controller:
             package: dynamixel_controllers
             module: joint_position_controller

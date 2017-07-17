@@ -1,3 +1,5 @@
+<!-- -*- mode: XML -*- -->
+
 <launch>
   <arg name="model" default="$(find irl_dual_arm)/urdf/irl_dual_arm.urdf" />
   <arg name="gui"  default="True" />
@@ -5,4 +7,7 @@
   <param name="use_gui" value="$(arg gui)" />
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
   <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" />
+  <node name="pos_control" pkg="gripper_controller" type="pos_control.py" output="screen" />
+<!-- Launch visualization in rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find irl_dual_arm)/urdf.rviz" required="true" />
 </launch>

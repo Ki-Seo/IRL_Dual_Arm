@@ -1,0 +1,53 @@
+irl_dual_arm:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  joint1_position_controller:
+    type: position_controllers/JointPositionController
+    joint: joint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint2_position_controller:
+    type: position_controllers/JointPositionController
+    joint: joint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint3_position_controller:
+    type: position_controllers/JointPositionController
+    joint: joint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint4_position_controller:
+    type: position_controllers/JointPositionController
+    joint: joint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint5_position_controller:
+    type: position_controllers/JointPositionController
+    joint: joint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint6_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger1_1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint7_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger1_2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint8_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger2_1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint9_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger2_2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint10_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger3_1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint11_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_finger3_2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+ 
