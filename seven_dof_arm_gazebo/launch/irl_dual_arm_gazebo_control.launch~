@@ -34,5 +34,6 @@
 	respawn="false" output="screen">
     <remap from="/joint_states" to="/irl_dual_arm/joint_states" />
   </node>
+  <node name="irl_dual_arm_control" pkg="seven_dof_arm_gazebo" type="irl_dual_arm_control.py" output="screen" />
 
 </launch>

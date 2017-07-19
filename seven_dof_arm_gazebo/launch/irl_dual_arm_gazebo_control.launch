@@ -1,5 +1,5 @@
-<launch>
 <!-- -*- mode: XML -*- -->
+<launch>
   <!-- Launch Gazebo  -->
   <include file="$(find seven_dof_arm_gazebo)/launch/irl_dual_arm_world.launch" />   
 
