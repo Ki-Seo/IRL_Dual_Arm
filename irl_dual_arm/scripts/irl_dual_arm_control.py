@@ -6,7 +6,7 @@ import math
 #import time
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
-from seven_dof_arm_gazebo.msg import Inputpos
+from irl_dual_arm.msg import Inputpos
 #from robot_mapping.msg import Serialmsg, Slavepos
 
 class pos:
@@ -16,16 +16,16 @@ class pos:
         joint_sub = rospy.Subscriber("/joint_states", JointState, self.callback_2, queue_size= 100)
 
         self.pub_1 = rospy.Publisher('/irl_dual_arm/joint1_position_controller/command', Float64)
-        self.pub_2 = rospy.Publisher('/joint2_position_controller/command', Float64)
-        self.pub_3 = rospy.Publisher('/joint3_position_controller/command', Float64)
-        self.pub_4 = rospy.Publisher('/joint4_position_controller/command', Float64)
-        self.pub_5 = rospy.Publisher('/joint5_position_controller/command', Float64)
-        self.pub_6 = rospy.Publisher('/joint6_position_controller/command', Float64)
-        self.pub_7 = rospy.Publisher('/joint7_position_controller/command', Float64)
-        self.pub_8 = rospy.Publisher('/joint8_position_controller/command', Float64)
-        self.pub_9 = rospy.Publisher('/joint9_position_controller/command', Float64)
-        self.pub_10 = rospy.Publisher('/joint10_position_controller/command', Float64)
-        self.pub_11 = rospy.Publisher('/joint11_position_controller/command', Float64)
+        self.pub_2 = rospy.Publisher('/irl_dual_arm/joint2_position_controller/command', Float64)
+        self.pub_3 = rospy.Publisher('/irl_dual_arm/joint3_position_controller/command', Float64)
+        self.pub_4 = rospy.Publisher('/irl_dual_arm/joint4_position_controller/command', Float64)
+        self.pub_5 = rospy.Publisher('/irl_dual_arm/joint5_position_controller/command', Float64)
+        self.pub_6 = rospy.Publisher('/irl_dual_arm/joint6_position_controller/command', Float64)
+        self.pub_7 = rospy.Publisher('/irl_dual_arm/joint7_position_controller/command', Float64)
+        self.pub_8 = rospy.Publisher('/irl_dual_arm/joint8_position_controller/command', Float64)
+        self.pub_9 = rospy.Publisher('/irl_dual_arm/joint9_position_controller/command', Float64)
+        self.pub_10 = rospy.Publisher('/irl_dual_arm/joint10_position_controller/command', Float64)
+        self.pub_11 = rospy.Publisher('/irl_dual_arm/joint11_position_controller/command', Float64)
         
         self.flag = 0
         

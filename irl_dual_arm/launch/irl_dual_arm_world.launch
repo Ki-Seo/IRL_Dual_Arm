@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream:seven_dof_arm_gazebo/launch/irl_dual_arm_world.launch~
+<!---->
+=======
+<!-- -*- mode: XML -*- -->
+>>>>>>> Stashed changes:irl_dual_arm/launch/irl_dual_arm_world.launch
 <launch>
 
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
@@ -8,27 +13,23 @@
   <arg name="debug" default="false"/>
 
   <!-- We resume the logic in empty_world.launch -->
+  <arg name="world_file"  value="$(find irl_dual_arm)/worlds/grasping.world"/>  
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
- 
-<!--   <arg name="world_name" default="$(find seven_dof_arm_gazebo)/worlds/grasping.world"/>  -->
-<!--   <arg name="world_name" default="$(find seven_dof_arm_gazebo)/worlds/grasp_final.sdf"/>  -->
-
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="headless" value="$(arg headless)"/>
+    <arg name="world_name" value="$(arg world_file)"/>
   </include>
 
   <!-- Load the URDF into the ROS Parameter Server -->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find mastering_ros_robot_description_pkg)/urdf/seven_dof_arm.xacro'" /> 
-
-
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find irl_dual_arm)/urdf/irl_dual_arm.xacro'" /> 
 
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-urdf -model seven_dof_arm -param robot_description"/> 
+	args="-urdf -model irl_dual_arm -param robot_description"/> 
 
 
 </launch>
