@@ -1,12 +1,12 @@
-<!-- -*- mode: XML -*- -->
 <launch>
+<!-- -*- mode: XML -*- -->
   <!-- Launch Gazebo  -->
   <include file="$(find seven_dof_arm_gazebo)/launch/irl_dual_arm_world.launch" />   
 
-	<!-- Setting gui parameter to true for display joint slider -->
-	<param name="use_gui" value="true"/>
-	<!-- Starting Joint state publisher node which will publish the joint values -->
-	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <!-- Setting gui parameter to true for display joint slider -->
+  <param name="use_gui" value="true"/>
+  <!-- Starting Joint state publisher node which will publish the joint values -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
 
   <!-- Load joint controller configurations from YAML file to parameter server -->

@@ -1,8 +1,5 @@
-<<<<<<< Updated upstream:seven_dof_arm_gazebo/launch/irl_dual_arm_world.launch~
-<!---->
-=======
 <!-- -*- mode: XML -*- -->
->>>>>>> Stashed changes:irl_dual_arm/launch/irl_dual_arm_world.launch
+
 <launch>
 
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
